@@ -1,0 +1,193 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Elements */
+html {
+    background-color: rgb(246, 252, 255) ;
+    background-image: url(../img/wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: 300px auto;
+    font-family: "Spectral", serif;
+
+    
+}
+body {
+    margin: 20px 40px;
+    line-height: 1.75;
+}
+
+/* Structure */
+.header-logo img {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+}
+nav ul li{
+    display: flex;
+    margin: 0 20px;
+    font-size: 16pt;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+nav ul li a:active {
+    color: #457b9d;
+}
+
+/* Main content */
+main img {
+    width: 450px;
+    height: auto;
+}
+.topclass {
+    display: flex;
+}
+.topclass img {
+    width: 453px;  
+}
+.about img {
+    width: 660px;
+}
+.about p {
+    width: 660px;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+@keyframes rotateAnimation {
+    0% { transform: rotate(0deg) scale(1.1); }
+    25% { transform: rotate(-8deg) scale(1.1); }
+    50% { transform: rotate(8deg) scale(1.1); }
+    75% { transform: rotate(-8deg) scale(1.1); }
+    100% { transform: rotate(0deg) scale(1.1); }
+}
+.rotate-image:hover {
+    animation: rotateAnimation 0.6s ease-in-out;
+}
+.story {
+    max-width: 700px; 
+    line-height: 1.75;
+}
+.luca img:hover {
+    transform: scale(1.05);
+}
+
+/* music */
+.music img {
+    width: 700px;
+}
+.hoverImg img {
+    width: 700px;
+}
+.imageBox {
+    position: relative;
+    float: left;
+}
+.imageBox .hoverImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.imageBox:hover .hoverImg {
+    display: block;
+}
+.imageBox:hover .hoverImg {
+    display: block;
+}
+.music {
+    display: flex;
+}
+.albumlogo {
+    margin-top: 30px;
+}
+.price {
+    font-size: 20px;
+}
+.insert img:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+
+/* merch */
+.allmerch {
+    display: flex;
+    text-align: center;
+}
+.items {
+    width: 453px;
+    justify-content: center;
+}
+.form img {
+    width: 400px;
+    margin: 40px 10px;
+    box-shadow: 0px 0px 10px #222;
+    border: 1px solid #000;
+}
+.button-confirm:active {
+    box-shadow: 0px 0px black;
+    transform: translate(3px, 3px);
+}
+.button-confirm {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #555;
+    background-color: rgb(246, 252, 255);
+    -webkit-box-shadow: 4px 4px #555;
+            box-shadow: 4px 4px #555;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    margin:0  auto;
+    font-family: "Spectral", serif;
+}
+
+/* Footer */
+.footer-1 {
+    display: flex;
+    justify-content: space-between;
+}
+footer img {
+    width: 670px;
+    margin-top: 40px;
+}
+.footer-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.footer-2 img {
+    width: 300px;
+}
+.footer-link li {
+    list-style-type:square;
+}
+.footer-link li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.footer-link li a:hover, a:focus{
+    text-decoration: underline;
+}
+.footer-link li a:active {
+    color: #457b9d;
+}
